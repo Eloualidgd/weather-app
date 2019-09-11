@@ -149,7 +149,7 @@
 
 
 
-                console.log(img1);
+                console.log(pic1);
                 //document.getElementsByClassName("icon")[0].innerHTML = icon ;
 
 
