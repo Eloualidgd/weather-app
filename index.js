@@ -112,17 +112,25 @@
 
                 let description = data.list[0].weather[0].description;
 
-                document.getElementsByClassName("description")[0].innerHTML = description ;
-                document.getElementsByClassName("description")[1].innerHTML = description ;
-                document.getElementsByClassName("description")[2].innerHTML = description ;
-                document.getElementsByClassName("description")[3].innerHTML = description ;
-                document.getElementsByClassName("description")[4].innerHTML = description ;
+                document.getElementsByClassName("description")[0].innerHTML = listDay0[0].weather[0].description ;
+                document.getElementsByClassName("description")[1].innerHTML = listDay1[0].weather[0].description ;
+                document.getElementsByClassName("description")[2].innerHTML = listDay2[0].weather[0].description ;
+                document.getElementsByClassName("description")[3].innerHTML = listDay3[0].weather[0].description ;
+                document.getElementsByClassName("description")[4].innerHTML = listDay4[0].weather[0].description ;
 
                 let icon = data.list[0].weather[0].icon;
 
 
 
-                let img1 = document.getElementById("pic1");
+            document.getElementById("pic1").src = "http://openweathermap.org/img/wn/" + listDay0[0].weather[0].icon + ".png";
+            document.getElementById("pic2").src = "http://openweathermap.org/img/wn/" + listDay1[0].weather[0].icon + ".png";
+            document.getElementById("pic3").src = "http://openweathermap.org/img/wn/" + listDay2[0].weather[0].icon + ".png";
+            document.getElementById("pic4").src = "http://openweathermap.org/img/wn/" + listDay3[0].weather[0].icon + ".png";
+            document.getElementById("pic5").src = "http://openweathermap.org/img/wn/" + listDay4[0].weather[0].icon + ".png";
+
+
+
+                /*let img1 = document.getElementById("pic1");
                 img1.src = "http://openweathermap.org/img/wn/"+ icon +".png";
 
                 let img2 = document.getElementById("pic2");
@@ -135,7 +143,7 @@
                 img4.src = "http://openweathermap.org/img/wn/"+ icon +".png";
 
                 let img5 = document.getElementById("pic5");
-                img5.src = "http://openweathermap.org/img/wn/"+ icon +".png";
+                img5.src = "http://openweathermap.org/img/wn/"+ icon +".png";*/
 
 
 
